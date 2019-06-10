@@ -1,3 +1,35 @@
 body{
-    background-color: black;
+    /*background-color: black; */
+ 
 }
+.menu{
+    justify-content: space-around;
+}
+section .custons{
+    margin: solid white 1px;
+    height: 100%;
+    display: flex;
+
+}
+div #collor img {
+    width: 30%;
+    height: 5vh;
+    justify-content: flex-end;
+    
+}
+
+section #menu2{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#collor{
+    width: 100%;
+}
+.camisetas img{
+    width:30%;
+}
+
+
+
+
