@@ -11,21 +11,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <script>
+    // função executada quando pega a imagem
     function recebePrint(ev) {
         ev.preventDefault();
     }
-
-    function inserePrint(ev) {
-        ev.dataTransfer.setData("Text", ev.target.id);
-
-    }
-
-
     function drop(ev) {
-        console.log(ev);
-        let custom = ev.dataTransfer.getElement("Text");
-        ev.target.appendChild(document.getElementById(custom))
-        ev.preventDefault();
+        let custom = event.dataTransfer.getData("Text/plain");
+        var div = document.querySelector('#logoDaCamisa');
+        let img =  document.createElement('img')
+        img.setAttribute('src',custom);
+        img.style.width = "100px";
+        div.appendChild(img)
         console.log("");
     }
 </script>
@@ -63,31 +59,38 @@
 
     <section id="custom" class="container d-flex menu col-lg-12">
         <!-- container para customizar as camisetas -->
-        <section class="col-lg-6">
-            <div class="flex-column text-center" ondrop="drop(event)" ondragover="recebePrint(event)">
+        <section class="col-lg-6" id="CorDaCamiseta">
+            <div class="flex-column text-center">
                 <h1>Your Shirt GlubGlub</h1>
-                <figure class="figure">
-                    <img src="imagens/camiseta-teste.jpg" class="figure-img img-fluid rounded"
-                        alt="Imagem de um quadrado genérico com bordas arredondadas, em uma figure.">
-                    <figcaption class="figure-caption">Uma legenda para a imagem acima.</figcaption>
-                </figure>
+                <div id="logoDaCamisa" class="camiseta" ondrop="drop(event)" ondragover="recebePrint(event)">
+
+
+
+                </div>
 
             </div>
         </section>
-        </div><br>
+
         <!-- container para mudar as cores -->
         <section id="menu2">
             <div>
-                <h3>Change Color</h3>
+                <h3>Change Color your GlubGlub</h3>
                 <div class="camisetas">
+                    <input id="still" type="color" value="">
+                    <script>
+                        let camisetas = document.querySelector('#still');
+                        camisetas.addEventListener("change", tunning);
 
-                    <img class="c1"src="imagens/camisa-teste2.jpg" alt="">
-                    <img class="c2"src="imagens/camisa-teste3.jpg" alt="">
-                    <img class="c3"src="imagens/camisa-teste4.jpg" alt="">
-                    <img class="c4"src="imagens/camisa-teste.jpg" alt="">
+                        function tunning(ev) {
+                            let camiseta = document.querySelector('.camiseta');
+                            camiseta.style.backgroundColor = ev.target.value;
+
+
+                        }
+                    </script>
                 </div>
             </div>
-            <div id="collor" name="collor" draggable="true" ondragstart="inserePrint(event)">
+            <div id="collor" name="collor" draggable="true" ondragstart="inserePrint(')">
                 <!-- container para mudar as estampas -->
                 <!-- <div id=cores> -->
                 <h3>menu of Prints</h3>
