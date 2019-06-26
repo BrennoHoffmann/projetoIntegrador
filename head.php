@@ -33,10 +33,13 @@
           <!-- <input class="form-control mr-sm-2" type="search" placeholder="Login" aria-label="Login"> -->
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="cadastro.php">Cadastra-se</a></button>
         </div>
-
-
+        <div class="form-inline my-8 my-lg-8 d-flex justify-content-end">
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Login" aria-label="Login"> -->
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.php">Login</a></button>
+        </div>
       </ul>
     </div>
-  </nav> <br>
+  </nav><br>
+
 </body>
 </html>

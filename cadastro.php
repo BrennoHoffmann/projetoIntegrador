@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php require_once "head.php";?>
+    <?php require_once "head.php"?>
     <form class="d-flex flex-column col-md-6 justify-content-start">
     <div class="form-row">
         <div class="form-group col-md">
