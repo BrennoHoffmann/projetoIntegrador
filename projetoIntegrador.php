@@ -11,47 +11,19 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex">
-    <a class="navbar-brand" href="#">GlubGlub</a>
-
-    <img width="2%" src="Imagens/dynamic-style.png" class="rounded-circle">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="projetoIntegrador.php">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.php">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cust.php">Custons your Shirt</a>
-        </li>
-
-        <div class="form-inline my-8 my-lg-8 d-flex justify-content-end">
-          <input class="form-control mr-sm-2" type="search" placeholder="Login" aria-label="Login">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Seu Nome</button>
-        </div>
-
-
-      </ul>
-    </div>
-  </nav> <br>
+ <?php require_once "head.php"?>
 <!-- primeiro carrosel -->
 <section class= "container">
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="imagens/carrossel1.jpg" class="d-block w-100" alt="...">
+        <img src="imagens/banner11.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="imagens/carrossel3.jpg" class="d-block w-100" alt="...">
+        <img src="imagens/bannerprincipal1.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="imagens/carrossel12.jpg" class="d-block w-100" alt="...">
+        <img src="imagens/bannerprincipal2.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -69,7 +41,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="Imagens/carrossel1.jpg" class="card-img-top" alt="...">
+          <img src="imagens/produto3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Produto A</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -79,7 +51,7 @@
       </div>
       <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="Imagens/carrossel12.jpg" class="card-img-top" alt="...">
+          <img src="imagens/produto2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Produto B</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -89,7 +61,7 @@
       </div>
       <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="Imagens/carrossel3.jpg" class="card-img-top" alt="...">
+          <img src="imagens/produto1.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Produto C</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -101,17 +73,25 @@
   </section>
   <br>
 
+<hr class="container">
+
+<section class="container d-flex ">
+  <div class="pagen">
+  <p>
+  formas de pagamento 
+  </p>
+  <img src="imagens/formas-de-pagamento-mercadopago.png" alt="">
+  </div>
+  <div class="pagen">
+  <p>formas de envio</p>
+  <img src="imagens/correios.png" alt="">
+  </div>
+</section>
 
  <footer class="page-footer font-small blue">
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="https://google.com"> Google.com</a>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
+ 
+<?php require_once "footer.php"?>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -45,6 +45,13 @@ input .still{
     height: 50vh;
     background-color:black;
 }
+hr{
+    height: 2px;
+
+}
+.pagenv img{
+    height: 10px;
+}
   /* #logoDaCamisa{
     width: 50%;
     height: 50%;

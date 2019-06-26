@@ -105,8 +105,19 @@
             </div>
 
             </div><br>
+
+            <div>
+                <input class="confirm" type="submit" value="Confirmar Style">
+                <!-- fazer um JS onde só podemos enviar quando estiver confirmado o style da camiseta -->
+
+               <a href="confirmarCompra.php"><input class="envio" type="submit"></a> 
+                       
+            </div>
         </section>
     </section>
+
+
+    
 </body>
 
 </html>
