@@ -1,0 +1,15 @@
+  <div class="row">
+      <div class="col-lg-12 d-flex justify-content-between text-center">
+        <?php foreach($produtos as $produto){?>
+        <div class="card customCard" style="width:18rem;">
+          <img src="<?= $produto['img']?>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><?= $produto['camiseta']?></h5>
+            <p class="card-text"><?= $produto['descricao'] ?></p>
+            <a href="#" class="btn btn-primary"><?= $produto['preco']?></a>
+          </div>
+
+        </div>
+        <?}?>
+      </div>
+    </div>
